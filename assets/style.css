@@ -1,0 +1,139 @@
+:root {
+  background-color: black;
+  color: white;
+}
+
+body {
+  width: 90%;
+  margin: auto;
+
+}
+
+.inline-block {
+    display: inline-block;
+    vertical-align: top;
+ 
+  }
+
+  
+  .heroImg {
+    background-image: url(homepage/shyam-h4nsr-TV_vc-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+  }
+
+
+  /* .heroImg::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+
+  } */
+
+ 
+
+
+  .navigation {
+    width: 100%;
+    text-align: center;
+    display: flex;
+  
+  
+  }
+  
+  .logo {
+    width: 200px;
+    border-radius: 50%;
+    border: 1px solid white;
+    
+  }
+  
+  nav {
+    width: 100vw;
+    padding: 1%;
+    text-align: center;  
+    justify-content: flex-end;
+  }
+
+  nav ul li {
+    padding: 10px;
+    cursor: pointer;
+  }
+  
+  ul {
+    width: 50%;
+    margin-left: auto;
+  }
+  
+  .heroImg {
+    height: 600px;
+    padding: 25px;
+  }
+  
+  .content {
+    width: 500px;
+    margin: 0 auto;
+  }
+  
+  footer {
+    background-color: #373738;
+    width: 100%;
+  }
+  
+  footer ul {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 auto;
+  }
+  
+  footer ul li {
+    padding: 5%;
+    cursor: pointer;
+  }
+
+
+  .skills {
+    display: inline-block;
+    width: 30%;
+    height: auto;
+    padding: 5px;
+    margin: 2px;
+  }
+
+  .flexContainer {
+    display: flex;
+    padding: 60px 30px;
+    align-content: center;
+  }
+
+  .workGrid {
+    align-content: center;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 400px 400px 400px;
+    grid-template-areas:"img1 content1" "img2 content2" "img3 content3";
+  }
+@media only screen and (max-width: 600){
+  display: grid;
+  #flexContainer {
+    display: column;
+    width: 100%;
+    padding: 60px 30px;
+      #workGrid {
+        margin: 0px 5%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 400px 400px 400px;
+        grid-template-areas:
+        "img1 content1" 
+        "img2 content2" 
+        "img3 content3";
+      }
+     
+
+}
